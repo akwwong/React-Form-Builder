@@ -1,6 +1,6 @@
 "use client";
 
-import { SunIcon } from "@radix-ui/react-icons";
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
@@ -18,6 +18,14 @@ function ThemeSwitcher() {
   return (
     <Tabs defaultValue={theme}>
       <TabsList className="border">
+        <TabsTrigger value="light" onClick={() => setTheme("light")}>
+          <SunIcon className="h-[1.2rem] w-[1.2rem]" />
+        </TabsTrigger>
+
+        <TabsTrigger value="dark" onClick={() => setTheme("light")}>
+          <MoonIcon className="h-[1.2rem] w-[1.2rem]" />
+        </TabsTrigger>
+
         <TabsTrigger value="light" onClick={() => setTheme("light")}>
           <SunIcon className="h-[1.2rem] w-[1.2rem]" />
         </TabsTrigger>
