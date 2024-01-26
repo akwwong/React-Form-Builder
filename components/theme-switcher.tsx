@@ -1,7 +1,7 @@
 "use client";
 
 import { DesktopIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
-import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 
